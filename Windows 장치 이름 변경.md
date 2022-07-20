@@ -8,22 +8,22 @@
 
 해당 작업의 테스트를 진행해보겠다.
 
-![%EC%BA%A1%EC%B2%98_7](https://user-images.githubusercontent.com/84123877/179883316-e8f8201e-1fac-4ecb-9a8c-82a20033172a.png)
+![%EC%BA%A1%EC%B2%98_1](https://user-images.githubusercontent.com/84123877/179883298-2a4d4cc8-d6b6-43bb-a26f-61ae5154cf86.png)
 
 해당 장치명 (Fortinet Virtual Ethernet Adapter (NDIS 6.30) 변경을 시작하겠다.
 
-![%EC%BA%A1%EC%B2%98_1](https://user-images.githubusercontent.com/84123877/179883298-2a4d4cc8-d6b6-43bb-a26f-61ae5154cf86.png)
+![%EC%BA%A1%EC%B2%98_2](https://user-images.githubusercontent.com/84123877/179883303-084d38b6-12fa-4b30-878b-52a8b1fa8b74.png)
 
 변경할 장치 우클릭 -> 속성 -> 자세히
 
 속성을 드라이버 키로 맞춘 뒤, 아래의 값 코드를 복사한다.
 
 
-![%EC%BA%A1%EC%B2%98_2](https://user-images.githubusercontent.com/84123877/179883303-084d38b6-12fa-4b30-878b-52a8b1fa8b74.png)
+![%EC%BA%A1%EC%B2%98_3](https://user-images.githubusercontent.com/84123877/179883305-43975618-216c-41cc-b077-13fb3e961929.png)
 
 윈도우 + R (실행창) -> regedit을 입력하여 레지스트리 편집기를 실행한다.
 
-![%EC%BA%A1%EC%B2%98_3](https://user-images.githubusercontent.com/84123877/179883305-43975618-216c-41cc-b077-13fb3e961929.png)
+![%EC%BA%A1%EC%B2%98_4](https://user-images.githubusercontent.com/84123877/179883308-df43ea71-b4b0-44c9-b76a-4df58e374e45.png)
 
 레지스트리 편집기에서 다음 경로로 이동한다.
 
@@ -35,7 +35,7 @@ HKEY_LOCAL_MACHINE > SYSTEM
 
 찾을 내용에 복사해둔 장치 드라이버 코드값을 입력한다.
 
-![%EC%BA%A1%EC%B2%98_4](https://user-images.githubusercontent.com/84123877/179883308-df43ea71-b4b0-44c9-b76a-4df58e374e45.png)
+![%EC%BA%A1%EC%B2%98_5](https://user-images.githubusercontent.com/84123877/179883311-eaedf785-7cbd-42f2-9eba-280a315a85f4.png)
 
 검색 후 장치를 찾을 수 있다.
 
@@ -43,11 +43,11 @@ HKEY_LOCAL_MACHINE > SYSTEM
 
 FriendlyName을 더블클릭하여 데이터 값을 변경한다.
 
-![%EC%BA%A1%EC%B2%98_5](https://user-images.githubusercontent.com/84123877/179883311-eaedf785-7cbd-42f2-9eba-280a315a85f4.png)
+![%EC%BA%A1%EC%B2%98_6](https://user-images.githubusercontent.com/84123877/179883314-330bd140-8bf4-4af0-b943-f4b90145f321.png)
 
 원하는 문구로 수정한다. 확인 -> 저장 후 변경을 확인해보겠다.
 
-![%EC%BA%A1%EC%B2%98_6](https://user-images.githubusercontent.com/84123877/179883314-330bd140-8bf4-4af0-b943-f4b90145f321.png)
+![%EC%BA%A1%EC%B2%98_7](https://user-images.githubusercontent.com/84123877/179883316-e8f8201e-1fac-4ecb-9a8c-82a20033172a.png)
 
 원하는 장치 명칭으로 정상 출력됨을 확인할 수 있습니다.
 
